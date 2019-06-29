@@ -17,5 +17,5 @@ thinkplot.Show(xlabel='numkdhh', ylabel='PMF')
 
 print('Actual mean', pmf.Mean(), '\nBiased mean', new_pmf.Mean())
 ```
->> Actual mean 1.024205155043831
->> Biased mean 2.403679100664282
+__Actual mean__ 1.024205155043831
+__Biased mean__ 2.403679100664282
