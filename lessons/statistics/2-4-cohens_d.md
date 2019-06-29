@@ -1,5 +1,5 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
-
+```
 import nsfg
 
 preg = nsfg.ReadFemPreg()
@@ -10,9 +10,9 @@ others = live[live.birthord != 1]
 
 # Comparing mean weights of first babies and other babies
 firsts.totalwgt_lb.mean(), others.totalwgt_lb.mean() 
-
+```
 Result: (7.201094430437772, 7.325855614973262) # First babies are lighter than others
-
+```
 # function for Cohen's d
 def Cohens(group1, group2):
   diff = group1.mean() - group2.mean()
@@ -28,5 +28,5 @@ def Cohens(group1, group2):
   return d
  
 Cohens(firsts.totalwgt_lb, others.totalwgt_lb)
-
+```
 Result: -0.088672927072602
